@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JavaScript KeyBoard Piano">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Piano-Keyboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header><h1>Press a key to make a note!</h1>
+            <img 
+            src="keyboard.svg" 
+            alt="a keyboard"
+            height="150px"
+            width="150px" />
+    </header>
+    <div class="keys-container">  
+        <div class="line-one"> 
+            <button data-key="81" onclick="playSound(this.getAttribute('data-key'))">Q</button>
+            <button data-key="87" onclick="playSound(this.getAttribute('data-key'))">W</button>
+            <button data-key="69" onclick="playSound(this.getAttribute('data-key'))">E</button>
+            <button data-key="82" onclick="playSound(this.getAttribute('data-key'))">R</button>
+            <button data-key="84" onclick="playSound(this.getAttribute('data-key'))">T</button>
+            <button data-key="89" onclick="playSound(this.getAttribute('data-key'))">Y</button>
+            <button data-key="85" onclick="playSound(this.getAttribute('data-key'))">U</button>
+            <button data-key="73" onclick="playSound(this.getAttribute('data-key'))">I</button>
+            <button data-key="79" onclick="playSound(this.getAttribute('data-key'))">O</button>
+            <button data-key="80" onclick="playSound(this.getAttribute('data-key'))">P</button>
+        </div>
+        <div class="line-two"> 
+                <button data-key="65" onclick="playSound(this.getAttribute('data-key'))">A</button>
+                <button data-key="83" onclick="playSound(this.getAttribute('data-key'))">S</button>
+                <button data-key="68" onclick="playSound(this.getAttribute('data-key'))">D</button>
+                <button data-key="70" onclick="playSound(this.getAttribute('data-key'))">F</button>
+                <button data-key="71" onclick="playSound(this.getAttribute('data-key'))">G</button>
+                <button data-key="72" onclick="playSound(this.getAttribute('data-key'))">H</button>
+                <button data-key="74" onclick="playSound(this.getAttribute('data-key'))">J</button>
+                <button data-key="75" onclick="playSound(this.getAttribute('data-key'))">K</button>
+                <button data-key="76" onclick="playSound(this.getAttribute('data-key'))">L</button>
+        </div> 
+        <div class="line-three"> 
+                <button data-key="90" onclick="playSound(this.getAttribute('data-key'))">Z</button>
+                <button data-key="88" onclick="playSound(this.getAttribute('data-key'))">X</button>
+                <button data-key="67" onclick="playSound(this.getAttribute('data-key'))">C</button>
+                <button data-key="86" onclick="playSound(this.getAttribute('data-key'))">V</button>
+                <button data-key="66" onclick="playSound(this.getAttribute('data-key'))">B</button>
+                <button data-key="78" onclick="playSound(this.getAttribute('data-key'))">N</button>
+                <button data-key="77" onclick="playSound(this.getAttribute('data-key'))">M</button>
+        </div> 
+        <div class="example"><h2>Try this : C-C-C-V-B-V-C-B-V-V-C !</h2></div>
+   
+    </div>
+    <div id="audioSource">
+            <audio data-key='81' src='./notes/c1.wav'></audio>
+            <audio data-key='87' src='./notes/d1.wav'></audio>
+             <audio data-key='69' src='./notes/e1.wav'></audio>
+             <audio data-key='82' src='./notes/f1.wav'></audio>
+             <audio data-key='84' src='./notes/g1.wav'></audio>
+             <audio data-key='89' src='./notes/a1.wav'></audio>
+             <audio data-key='85' src='./notes/b1.wav'></audio>
+             <audio data-key='73' src='./notes/c2.wav'></audio>
+             <audio data-key='79' src='./notes/d2.wav'></audio>
+             <audio data-key='80' src='./notes/e2.wav'></audio>
+             <audio data-key='65' src='./notes/f2.wav'></audio>
+             <audio data-key='83' src='./notes/g2.wav'></audio>
+             <audio data-key='68' src='./notes/a2.wav'></audio>
+             <audio data-key='70' src='./notes/b2.wav'></audio>
+             <audio data-key='71' src='./notes/c3.wav'></audio>
+             <audio data-key='72' src='./notes/d3.wav'></audio>
+             <audio data-key='74' src='./notes/e3.wav'></audio>
+             <audio data-key='75' src='./notes/f3.wav'></audio>
+             <audio data-key='76' src='./notes/g3.wav'></audio>
+             <audio data-key='90' src='./notes/a3.wav'></audio>
+             <audio data-key='88' src='./notes/b3.wav'></audio>
+             <audio data-key='67' src='./notes/c4.wav'></audio>
+             <audio data-key='86' src='./notes/d4.wav'></audio>
+             <audio data-key='66' src='./notes/e4.wav'></audio>
+             <audio data-key='78' src='./notes/f4.wav'></audio>
+             <audio data-key='77' src='./notes/g4.wav'></audio>
+    </div>
+    <footer>
+        <script src="./app.js"></script>
+    </footer>
+</body>
+</html>
